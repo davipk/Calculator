@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground"
+    android:elevation="4dp"
+    android:paddingTop="24dp"
+    android:paddingBottom="24dp"
+    tools:context=".DisplayFragment">
+
+    <com.davipk.RightAlignedHorizontalScrollView
+        android:id="@+id/main_display"
+        style="@style/ScrollViewDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:longClickable="true">
+
+        <TextView
+            android:id="@+id/tv_display"
+            style="@style/TextViewDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_gravity="end"
+            android:ellipsize="start"
+            tools:text="123456" />
+    </com.davipk.RightAlignedHorizontalScrollView>
+
+</RelativeLayout>

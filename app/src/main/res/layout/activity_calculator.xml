@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_activity_calculator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.davipk.calculator.CalculatorActivity">
+
+    <fragment
+        android:id="@+id/cont_fragment_display_operator"
+        android:name="com.davipk.calculator.DisplayOperatorFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_display_operator" />
+
+    <fragment
+        android:id="@+id/cont_fragment_display"
+        android:name="com.davipk.calculator.DisplayFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cont_fragment_display_operator"
+        tools:layout="@layout/fragment_display" />
+
+    <fragment
+        android:id="@+id/cont_fragment_input"
+        android:name="com.davipk.calculator.InputFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cont_fragment_display"
+        tools:layout="@layout/fragment_input" />
+
+</RelativeLayout>
